@@ -87,17 +87,6 @@ body{
     font-size: 42px;
     display: none;
 }
-canvas{
-    position:absolute;top:0;left:0
-    
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(105,173,212)),
-        color-stop(0.84, rgb(23,82,145))
-    );
-}
 @media(min-width:767px){
     #date{
         font-size: 42px;
