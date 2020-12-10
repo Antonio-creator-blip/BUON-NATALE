@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Mountains+of+Christmas:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: url(phone.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+#container{
+    position: absolute;
+    top: 15vh;
+    width: 100vw;
+    text-align: center;
+}
+#crono{
+    width: 10vw;
+    margin-bottom: 2vh;
+}
+#date {
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    margin-bottom: 5vh;
+}
+  
+#date:before,
+#date:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    bottom: 2.5px;
+    vertical-align: middle;
+    width: 50%;
+    border-radius: 10px;
+}
+  
+#date:before {
+    right: 1.0em;
+    margin-left: -50% ;
+  }
+  
+#date:after {
+    left: 1em;
+    margin-right: -50%;
+  }
+#event{
+    margin-bottom: 10vh;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.celle{
+    text-align: center;
+    width: 80px !important;
+}
+#numeri{
+    font-size: 40px;
+    font-family: 'Carter One', cursive;
+}
+#made{
+    position: absolute;
+    bottom: 10px;
+    width: 100vw;
+    color: red;
+    font-family: 'Yeon Sung', cursive;
+}
+#word_day{
+    font-family: 'Russo One', sans-serif;
+}
+#end{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 42px;
+    display: none;
+}
+canvas{
+    position:absolute;top:0;left:0
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(105,173,212)),
+        color-stop(0.84, rgb(23,82,145))
+    );
+}
+@media(min-width:767px){
+    #date{
+        font-size: 42px;
+    }
+    #date:before,
+    #date:after {
+        height: 10px;
+        bottom: 7.5px;
+    }
+    #event{
+        font-size: 48px;
+        margin-bottom: 2vh;
+    }
+    #countdown{
+        margin-left: 20px;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #numeri{
+        font-size: 80px;
+    }
+    #word_day{
+        font-size: 24px;
+    }
+    #end{
+        font-size: 84px;
+        margin-top: 5vh;
+    }
+}
+@media(min-width:1023px ){
+    body{
+        background: url(pc.gif) no-repeat center center fixed;
+        background-size: cover;
+    }
+    #date{
+        font-size: 56px;
+    }
+    #date:before,
+    #date:after {
+        height: 15px;
+        bottom: 10px;
+    }
+    #event{
+        font-size: 62px;
+        margin-bottom: 2vh;
+    }
+    #numeri{
+        font-size: 100px;
+    }
+    #word_day{
+        font-size: 24px;
+    }
+    #end{
+        font-size: 102px;
+        margin-top: 5vh;
+    }
+    #made{
+        font-size: 36px;
+        color: #fff;
+    }
+}
+@media(min-width:1279px){
+    body{
+        background: url(pc.gif) no-repeat center center scroll;
+        background-size: cover;
+    }
+    #container{
+        position: absolute;
+        top: 2vh;
+        width: 100vw;
+        text-align: center;
+    }
+    #date{
+        font-size: 64px;
+    }
+    #date:before,
+    #date:after {
+        height: 15px;
+        bottom: 10px;
+    }
+    #countdown{
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #event{
+        font-size: 62px;
+        margin-bottom: 2vh;
+    }
+    #numeri{
+        font-size: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    #word_day{
+        font-size: 24px;
+    }
+    #end{
+        font-size: 102px;
+        margin-top: 5vh;
+    }
+    #made{
+        font-size: 36px;
+        color: #fff;
+    }
+}
